@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гоша Дударь сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300&family=Suez+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>itProger</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#"onclick="slowScroll('#overiew')" title="Преимущества">Преимущества</a>
+      <a href="#"onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#"onclick="slowScroll('#faq')" title="Ответы на вопросы" >FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Программирование</h1>
+    <h3>как способ жизни!</h3>
+  </div>
+  
+  <div id="main">
+      <div class="intro">
+        <h2>Наши услуги помогут вам!</h2>
+        <span>Большой выбор всегог, что может вам пригодиться!</span>
+      </div>
+      <div class="text">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quidem molestias earum quam doloribus aut, adipisci porro, pariatur voluptates maiores similique! Tempore, itaque! Et non, minima dolor dolorum nesciunt ea, illo perspiciatis placeat velit quidem eaque. Aut asperiores totam rem.
+        </span>
+      </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>С нами все проще</h4>
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1532975967.jpg" alt="">
+      <span>Изучение языка Ruby для начинающих</span>
+    </div>
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1530341233.jpg" alt="">
+      <span>Уроки PhotoShop для начинающих</span>
+    </div>
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1523436361.jpg" alt="">
+      <span>Уроки Swift для начинающих</span>
+    </div>
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1518607198.jpg" alt="">
+      <span>Создание игр на Python 3 c PyGame</span>
+    </div>
+    <div class="img">
+      <img src="" alt="">
+      <span>Изучение языка Ruby для начинающих</span>
+    </div>
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $ ('html, body').animate( {
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+      $ ("header").removeClass("fixed");
+    else
+      $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
