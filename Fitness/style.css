@@ -1003,7 +1003,7 @@ padding-left: 35px;
 
 .footer-extra{
   padding-block: 15px;
-  color: var(--color-dark-alternate);
+  background-color: var(--color-dark-alternate);
 }
 
 .footer-copyrigt{
