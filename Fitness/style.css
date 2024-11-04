@@ -821,6 +821,11 @@ padding-left: 35px;
   grid-column: -1 / 1;
 }
 
+.custom-select option{
+  background-color: var(--color-dark-grey);
+  color: var(--color-light);
+}
+
 .calculate-table-wrapper{
   position: relative;
   width: 100%;
