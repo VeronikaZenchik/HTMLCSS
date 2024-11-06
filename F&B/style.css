@@ -127,19 +127,132 @@ label {
 	--green-hover: #91ac46;
 	--red: #e24949;
 
-  /* --border-radius: 30px;
-  --border: 1px solid var(--color-light); */
+  --border: 1px solid var(--primary-green);
 
   --font-family-base: "Open Sans", sans-serif;
   --font-family-accent: "Cormorant", sans-serif;
 
-
-  --input-height: 54px;
-
-  --container-width: 1300px;
-  --container-padding-x: 15px;
+  --input-height: 45px;
 
   --transition-duration: 0.2s;
 
   --header-height: 60px;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--background);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1174px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  min-height: var(--header-height);
+  padding-inline: 162px;
+  background-color: var(--background);
+
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-menu-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+.header-menu-link{
+  display: inline-flex;
+  align-items: center;
+  height: var(--header-height);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.header-actions {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+  width: 24px;
+  aspect-ratio: 1;
+  padding-left: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.search {
+  background-image: url(./icons/search.svg);
+}
+
+.log {
+  background-image: url(./icons/log-in.svg);
+}
+
+.header-button:hover {
+  background-color: var(--green-hover);
+}
+
+main {
+  display: block;
+}
+
+.banner {
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* opacity: 0.7; */
+
+}
+
+.banner-title {
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.banner-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.banner-button{
+  position: relative;
+  color: var(--primary-green);
+  border: none; 
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+.banner-button:hover {
+  background-color: var(--green-hover); 
 }
