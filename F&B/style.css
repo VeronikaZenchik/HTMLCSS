@@ -151,11 +151,17 @@ body {
   min-height: 100%;
 }
 
+.site-container {
+  overflow: hidden;
+  background-color: #1d2f30;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 32px;
   max-width: 1174px;
 }
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -205,6 +211,7 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
 .search {
   background-image: url(./icons/search.svg);
 }
@@ -222,11 +229,14 @@ main {
 }
 
 .banner {
-  background-image: url(./images/background.jpg);
+  background-image: url(https://live.verstaem.online/f&b/img/hero-bg.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 0.7; */
-
+  width: 100%;
+  min-height: 600px;
+  padding: 113px 0 117px;
+  position: relative; /* Для корректного позиционирования фона */
 }
 
 .banner-title {
@@ -234,12 +244,15 @@ main {
   font-weight: 700;
   font-size: 60px;
   line-height: 1;
+  margin: 0 0 22px;
 }
 
 .banner-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  margin: 0 0 24px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .banner-button{
@@ -250,9 +263,18 @@ main {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
+
+  align-items: center;
 }
 
 
 .banner-button:hover {
-  background-color: var(--green-hover); 
+  color: var(--green-hover); 
 }
+
+.banner-button svg {
+  margin-left: 8px;
+  width: 42px;
+  height: 23px;
+}
+
