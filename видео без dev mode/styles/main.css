@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container{
@@ -22,7 +23,6 @@ body {
   min-height: 500px;
   padding-top: 154px;
   padding-bottom: 122px;
-  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 
@@ -48,14 +48,75 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000;
-  font-family: "Montserrat", sans-serif;
   border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.block {
+  text-align: center;
+  margin-bottom: 118px;
+}
+
+.block_title {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.21em;
+  color: #000;
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+.block_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #9ca3af;
+  max-width: 465px;
+  margin: 0 auto;
+}
+
+.services{
+  padding: 88px 0 1660px;
+}
+
+.services_item {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+.item {
+  width: 280px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services_items_img {
+  align-self: center;
+
+}
+
+.services_items_title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9ca3af;
 }
 
 
 @media screen and (max-width: 768px){
   .container{
   padding: 0 15px;
+}
+.services_item{
+  flex-direction: column;
+  align-items: center;
 }
 }
 
