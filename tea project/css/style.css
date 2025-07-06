@@ -10,6 +10,21 @@ html{
   padding: 0;
 }
 
+html,
+body{
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -827,9 +842,13 @@ margin-top: 16px;
   .footer__products-title,
   .footer__company-title{
     margin-bottom: 30px;
-  }\.footer{
+  }
+  .footer{
     padding: 50px 0 10px;
   }
+  .footer__blockquote-author {
+    display: flex;
+}
 }
 
 @media (max-width: 360px) {
@@ -924,5 +943,7 @@ margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  .footer__blockquote-author {
+    display: flex;
+}
 }
