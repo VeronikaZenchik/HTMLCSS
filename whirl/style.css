@@ -1,0 +1,68 @@
+/* Общие сбросы */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F5;
+}
+
+/* Шапка */
+.header {
+  padding: 20px 0;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  flex-grow: 1; 
+  padding-left: 24px; 
+}
+
+.header__menu a {
+  color: #33383F;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__signin {
+  color: #0070A0 !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__demo {
+  background: #0070A0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 139px;
+  height: 36px;
+}
