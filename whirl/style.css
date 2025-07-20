@@ -146,5 +146,87 @@ ul{
   max-width: 452px;
   width: 100%; 
   height: auto;
+}
 
+.partners{
+  margin-top: 40px;
+  margin-bottom: 160px;
+}
+
+.partners__title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5625;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 24px;
+}
+
+.partners__images{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.advantages{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 160px;
+  height: 250px;
+  justify-content: center;
+
+}
+
+
+.advantages__title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.advantages__text{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #1d0a0a;
+  max-width: 290px;
+}
+
+.advantages__fast{
+  background-color: #faea73;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+  padding: 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.advantages__buck{
+  background-color: #cceff6;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+  padding-left: 32px;
+}
+
+.advantages__safe{
+  background-color:  #f7cedc;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+  padding-left: 32px;
 }
