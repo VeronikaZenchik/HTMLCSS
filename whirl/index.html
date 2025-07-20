@@ -87,45 +87,67 @@
       </div>
     </section>
 
-    <section class="options">
-      <div class="options__in">
-        <h2 class="options__title">We will take care of everything,<br>so you can get back to relaxing.</h2>
-        <div class="options__menu">
-          <ul class="options__list">
-            <li class="options__item">
-              <span class="options__line"></span>
-              <img src="./images/pin.svg" alt="pin" class="options__item-logo">
-              <p class="options__item-title">Anti-loss technology</p>
-              <p class="options__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <img src="./images/arrow-option.svg" alt="arrow option" class="options__item-arrow">
-            </li>
-            <li class="options__item">
-              <span class="options__line"></span>
-              <img src="./images/smile.svg" alt="smile" class="options__item-logo">
-              <p class="options__item-title">Exchange easily</p>
-              <img src="./images/arrow-option.svg" alt="arrow option" class="options__item-arrow">
-              <span class="options__line"></span>
-            </li>
-            <li class="options__item">
-              <img src="./images/letter.svg" alt="letter" class="options__item-logo">
-              <p class="options__item-title">Fully encrypted</p>
-              <img src="./images/arrow-option.svg" alt="arrow option" class="options__item-arrow">
-              <span class="options__line"></span>
-            </li>
-            <li class="options__item">
-              <img src="./images/lightning.svg" alt="lightning" class="options__item-logo">
-              <p class="options__item-title">Plenty of options</p>
-              <img src="./images/arrow-option.svg" alt="arrow option" class="options__item-arrow">
-              <span class="options__line"></span>
-            </li>
-          </ul>
+<section class="options">
+  <div class="options__content">
+    <h2 class="options__title">We will take care of everything,so you can get back to relaxing.</h2>
+    
+    <ul class="options__list">
+      <li class="options__item">
+        <div class="options__header">
+          <div class="options__icon">
+            <img src="./images/pin.svg" alt="Anti-loss">
+          </div>
+          <h3 class="options__heading">Anti-loss technology</h3>
+          <button class="options__toggle" aria-expanded="true">
+            <img src="./images/arrow-option.svg" alt="Toggle">
+          </button>
         </div>
-      </div>
-
-      <div class="options__img-container">
-        <img src="./images/computer.svg" alt="computer">
-      </div>
-    </section>
+        <div class="options__description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </li>
+      <li class="options__item">
+        <div class="options__header">
+          <div class="options__icon">
+            <img src="./images/smile.svg" alt="Exchange">
+          </div>
+          <h3 class="options__heading">Exchange easily</h3>
+          <button class="options__toggle" aria-expanded="false">
+            <img src="./images/arrow-option.svg" alt="Toggle">
+          </button>
+        </div>
+      </li>
+      <li class="options__item">
+        <div class="options__header">
+          <div class="options__icon">
+            <img src="./images/letter.svg" alt="Fully encrypted">
+          </div>
+          <h3 class="options__heading">Fully encrypted</h3>
+          <button class="options__toggle" aria-expanded="false">
+            <img src="./images/arrow-option.svg" alt="Toggle">
+          </button>
+        </div>
+      </li>
+      <li class="options__item">
+        <div class="options__header">
+          <div class="options__icon">
+            <img src="./images/lightning.svg" alt="Plenty of options">
+          </div>
+          <h3 class="options__heading">Plenty of options</h3>
+          <button class="options__toggle" aria-expanded="false">
+            <img src="./images/arrow-option.svg" alt="Toggle">
+          </button>
+        </div>
+      </li>
+      
+      <!-- Остальные пункты аналогично -->
+    </ul>
+  </div>
+  
+  <div class="options__image">
+    <img src="./images/computer.svg" alt="Computer">
+  </div>
+</section>
   </div>
 </main>
 

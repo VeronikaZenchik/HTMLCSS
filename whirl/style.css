@@ -231,54 +231,90 @@ ul{
   padding-left: 32px;
 }
 
-.options{
+.options {
   background-color: #f7f9fa;
   display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 140px;
+  padding: 80px 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.options__title{
+.options__content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.options__image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options__title {
   font-family: "Fraunces", sans-serif;
   font-weight: 400;
-  font-size: 39px;
-  line-height: 1.29231;
-  letter-spacing: 0.01em;
+  font-size: clamp(28px, 5vw, 39px);
+  line-height: 1.3;
   color: #1f1f1f;
+  margin-bottom: 40px;
 }
 
-.options__item-title{
+.options__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.options__item {
+  border-bottom: 1px solid #c2cdd8;
+  border-top: 1px solid #c2cdd8;
+  padding: 24px 0;                  
+  position: relative;
+}
+
+
+.options__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.options__icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options__heading {
   font-family: "Fraunces", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 1.2;
-  letter-spacing: 0.01em;
   color: #626a72;
+  flex: 1;
+  margin: 0;
 }
 
-.options__line{
-  width: 449px;
-  height: 1px;
-  background-color:  #1d65ad;
+.options__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.options__list{
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  flex-grow: 1; 
-  padding-left: 24px; 
+.options__toggle[aria-expanded="true"] {
+  transform: rotate(180deg);
 }
 
-.options__item{
-  display: flex;
-}
-
-.options__item-text{
-  font-weight: 400;
+.options__description {
+  padding: 16px 0 0 40px;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.01em;
   color: #1f1f1f;
 }
