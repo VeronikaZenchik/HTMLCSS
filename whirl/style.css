@@ -354,3 +354,58 @@ ul{
   line-height: 1.5;
   color: #1f1f1f;
 }
+
+.about{
+  margin-top: 130px;
+  margin-bottom: 120px;
+  display: flex;
+  gap: 98px;
+  justify-content: space-between; 
+}
+
+.about__heading{
+  min-width: 300px;
+}
+
+.about__info{
+  min-width: 732px;
+}
+
+.about__title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+
+.about__list{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.about__item-title:first-child{
+  margin-top: 66px;
+}
+
+.about__item-title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 8px;
+  margin-bottom: 11px;
+}
+
+.about__item-text{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+}
