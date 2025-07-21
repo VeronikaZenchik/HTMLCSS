@@ -445,7 +445,7 @@ ul{
 
 .track__content {
   flex: 1;
-  max-width: 500px;
+  max-width: 501px;
 }
 
 .track__title {
@@ -492,7 +492,6 @@ ul{
   background: url('./images/check.svg') no-repeat center;
 }
 
-
 .track__button {
   color: #FFFFFF;
   background-color: #0070A0;
@@ -504,4 +503,63 @@ ul{
   font-size: 17px;
   line-height: 1.5;
   cursor: pointer;
+}
+
+.tasks{
+  display: flex;
+  margin-bottom: 100px;
+  margin-top: 120px;
+  flex-direction: column;
+  gap: 68px;
+}
+
+.tasks__title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+
+.tasks__text{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 18px;
+  max-width: 650px;;
+}
+
+.tasks__list{
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-self: center;
+}
+
+.tasks__item {
+  min-width: 300px;
+}
+
+.tasks__item-title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+}
+
+.tasks__item-text{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 7px;
+  margin-bottom: 11px;
 }
