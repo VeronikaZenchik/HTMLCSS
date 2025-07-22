@@ -89,7 +89,7 @@ ul{
   justify-content: space-between; 
   align-items: center; 
   margin-top: 140px;
-
+  margin-bottom: 80px;
 }
 
 .info__container{
@@ -562,4 +562,117 @@ ul{
   color: #1f1f1f;
   margin-top: 7px;
   margin-bottom: 11px;
+}
+
+.cards {
+  position: relative;
+  padding: 80px 0;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: #f7f9fa;
+  z-index: -1;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.cards-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cards-wrapper {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.cards__header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.cards__title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+
+.cards__link{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.58824;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0070a0;
+}
+
+
+.cards__list{
+  display: flex;
+  gap: 32px;
+}
+
+.cards__item {
+  flex: 1;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards__item-wrapper{
+  padding: 24px;
+}
+
+.cards__item-link{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #2c90c9;
+  background-color:  #e6f7ff;
+  padding: 2px 12px 4px 12px;
+}
+
+.cards__item-title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 8px;
+  margin-bottom: 11px;
+}
+
+.cards__item-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-bottom: 16px;
+}
+
+.cards__item-date{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.63333;
+  letter-spacing: 0.02em;
+  color: #1f1f1f;
 }
