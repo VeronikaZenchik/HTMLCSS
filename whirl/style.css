@@ -675,3 +675,48 @@ ul{
   letter-spacing: 0.02em;
   color: #1f1f1f;
 }
+
+.buy{
+  margin: 80px 155px;
+  background-color: #E6F7FF;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  padding-left: 64px;
+}
+
+.buy__wrapper{
+  max-width: 502px;
+}
+
+.buy__title{
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+
+.buy__text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  margin-top: 21px;
+  margin-bottom: 33px;
+}
+
+.buy__list{
+  display: flex;
+  gap: 32px;
+}
+
+.buy__item{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.61538;
+  letter-spacing: 0.02em;
+  color: #626a72;
+  margin-top: 12px;
+}
